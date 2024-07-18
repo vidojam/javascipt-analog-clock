@@ -8,11 +8,11 @@ body {
 
 .clock {
     position: absolute;
-    height: 300px;
+    height: 300px; /* Adjust height and width to be equal for a perfect circle */
     width: 300px;
-    border-radius: 50%;
+    border-radius: 50%; /* Use percentage to ensure the border radius creates a circle */
     border: solid 5px rgb(252, 255, 55);
-    left: 149px;
+    left: 149px; /* Adjust position as needed */
 }
 
 #seconds-hand {
