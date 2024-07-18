@@ -7,12 +7,11 @@ body {
 }
 
 .clock {
-    position: absolute;
+    position: relative;
     height: 300px; /* Adjust height and width to be equal for a perfect circle */
     width: 300px;
     border-radius: 50%; /* Use percentage to ensure the border radius creates a circle */
     border: solid 5px rgb(252, 255, 55);
-    left: 149px; /* Adjust position as needed */
 }
 
 #seconds-hand {
@@ -20,21 +19,21 @@ body {
     height: 130px;
     width: 2px;
     background-color: rgb(70, 255, 255);
+    top: 20px;
     left: 149px;
-    bottom: 149px;
-    opacity: 50%;
-    transform-origin: 0 100%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
 }
 
 #minutes-hand {
- 
+    position: absolute;
     height: 100px;
     width: 2px;
     background-color: rgb(253, 128, 227);
-    position: absolute;
+    top: 50px;
     left: 149px;
-    bottom: 149px;
-    transform-origin: 0 100%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
 }
 
 #hours-hand {
@@ -42,20 +41,20 @@ body {
     height: 80px;
     width: 4px;
     background-color: rgb(205, 112, 255);
+    top: 70px;
     left: 148px;
-    bottom: 148px; 
-    transform-origin: 0 100%;
-    
+    transform-origin: bottom;
+    transform: rotate(0deg);
 }
 
 #center {
     height: 10px;
     width: 10px;
-    border-radius: 5px;
+    border-radius: 50%;
     background-color: rgb(252, 255, 55);
     position: absolute;
-    left: 145px;
-    bottom: 145px; 
+    top: 145px;
+    left: 145px; 
 }
 
 
